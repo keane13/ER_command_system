@@ -1,0 +1,10 @@
+google-adk
+mcp[cli]
+fastapi
+uvicorn
+requests
+pydantic
+cloud-sql-python-connector[asyncpg]
+sqlalchemy[asyncio]
+asyncpg
+python-dotenv
