@@ -34,7 +34,7 @@ const AriaChat: React.FC<AriaChatProps> = ({
   }, [messages, traceStep]);
 
   return (
-    <div style={{ width: 300, flexShrink: 0, borderRight: "1px solid rgba(51,65,85,.5)", display: "flex", flexDirection: "column", background: "rgba(2,8,23,.6)" }}>
+    <div style={{ width: 420, flexShrink: 0, borderRight: "1px solid rgba(51,65,85,.5)", display: "flex", flexDirection: "column", background: "rgba(2,8,23,.6)" }}>
       {/* Chat header */}
       <div style={{ padding: "12px 16px", borderBottom: "1px solid rgba(51,65,85,.4)", display: "flex", alignItems: "center", gap: 10 }}>
         <div style={{ width: 32, height: 32, borderRadius: "50%", background: "linear-gradient(135deg,#0e7490,#4f46e5)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
