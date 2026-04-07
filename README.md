@@ -81,3 +81,16 @@ cp .env.example .env
 
 # Run the API Server
 uvicorn main:app --reload --port 8000
+```
+
+### 2. Frontend Setup (Next.js)
+```bash
+cd ../frontend
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+# The dashboard will be live at http://localhost:3000
+```
