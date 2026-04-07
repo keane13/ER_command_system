@@ -6,10 +6,7 @@ import BedGrid from "../components/dashboard/BedGrid";
 import CallList from "../components/scheduler/CallList";
 import TaskList from "../components/scheduler/TaskList";
 import {
-  INITIAL_BEDS,
-  INITIAL_SCHEDULES,
-  INITIAL_TASKS,
-  AI_RESPONSES,
+  TRACE_STEPS,
   fetchBeds,
   fetchSchedule,
   fetchTasks,
@@ -20,9 +17,10 @@ import {
 } from "../lib/api";
 
 export default function ERCommandCenter() {
-  const [beds, setBeds] = useState<Bed[]>(INITIAL_BEDS as Bed[]);
-  const [schedules, setSchedules] = useState<ScheduleItem[]>(INITIAL_SCHEDULES as ScheduleItem[]);
-  const [tasks, setTasks] = useState<StaffTask[]>(INITIAL_TASKS as StaffTask[]);
+  const [beds, setBeds] = useState<Bed[]>([]);
+  const [schedules, setSchedules] = useState<ScheduleItem[]>([]);
+  const [tasks, setTasks] = useState<StaffTask[]>([]);
+
 
   const [messages, setMessages] = useState([
     {

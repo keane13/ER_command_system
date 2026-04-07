@@ -1,32 +1,11 @@
-export const INITIAL_BEDS = [
-  { id: "R-01", status: "empty", patient: null, diagnosis: null, time: null },
-  { id: "R-02", status: "critical", patient: "James Thornton", diagnosis: "Cardiac Arrest", time: "06:14" },
-  { id: "R-03", status: "observation", patient: "Sarah Mitchell", diagnosis: "Hypertension Grade III", time: "07:30" },
-  { id: "R-04", status: "empty", patient: null, diagnosis: null, time: null },
-  { id: "R-05", status: "critical", patient: "Michael Hayes", diagnosis: "Ischemic Stroke", time: "05:45" },
-  { id: "R-06", status: "observation", patient: "Linda Carter", diagnosis: "Acute Dyspnea", time: "08:00" },
-  { id: "R-07", status: "empty", patient: null, diagnosis: null, time: null },
-  { id: "R-08", status: "observation", patient: "David Nguyen", diagnosis: "Appendicitis", time: "07:55" },
-  { id: "R-09", status: "empty", patient: null, diagnosis: null, time: null },
-  { id: "R-10", status: "critical", patient: "Emily Russo", diagnosis: "Sepsis", time: "04:20" },
-  { id: "R-11", status: "observation", patient: "Chris Patel", diagnosis: "Femur Fracture", time: "08:10" },
-  { id: "R-12", status: "empty", patient: null, diagnosis: null, time: null },
-];
 
-export const INITIAL_SCHEDULES = [
-  { id: 1, time: "08:00", patient: "James Thornton", procedure: "Cardiology Consultation", doctor: "Dr. A. Chen, MD", status: "pending" },
-  { id: 2, time: "09:15", patient: "Sarah Mitchell", procedure: "Vital Signs Check", doctor: "Dr. R. Singh, MD", status: "done" },
-  { id: 3, time: "10:00", patient: "Michael Hayes", procedure: "Head CT Scan", doctor: "Dr. B. Torres, Rad", status: "in-progress" },
-  { id: 4, time: "11:30", patient: "Linda Carter", procedure: "Chest X-Ray", doctor: "Dr. S. Kim, Rad", status: "pending" },
-];
 
-export const INITIAL_TASKS = [
-  { id: 1, task: "EKG — Bed R-02 · James Thornton", done: false, priority: "high" },
-  { id: 2, task: "Replace IV Line — Bed R-05", done: true, priority: "medium" },
-  { id: 3, task: "Draw Blood Labs — Bed R-10", done: false, priority: "high" },
-  { id: 4, task: "Monitor Vitals — Beds R-03 & R-06", done: false, priority: "medium" },
-  { id: 5, task: "Complete SOAP Notes — Bed R-08", done: true, priority: "low" },
-];
+
+
+
+
+
+
 
 export const TRACE_STEPS = [
   { text: "Connecting to Agent Orchestrator..." },
@@ -37,11 +16,8 @@ export const TRACE_STEPS = [
   { text: "Generating final response..." },
 ];
 
-export const AI_RESPONSES = [
-  (bed: string) => `Bed ${bed} has been successfully allocated for the incoming patient with Observation status. A physician evaluation schedule and triage task have been automatically added to the system.`,
-  (bed: string) => `Instruction processed. Patient allocated to ${bed}. All agents updated — calendar, task manager, and bed tracker are now in sync.`,
-  (bed: string) => `Agents executed successfully. ${bed} is now in Observation status. Notifications sent to the on-call physician and duty nurse.`,
-];
+
+
 
 export const BED_META: Record<string, any> = {
   empty:       { label: "Available",   dot: "#34d399", textColor: "#6ee7b7", bg: "rgba(2,30,18,.45)",   border: "rgba(52,211,153,.3)" },
